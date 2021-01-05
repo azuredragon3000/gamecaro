@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">boitinhyeuazure</string>
+    <string name="button">Button</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">BackToMenu</string>
+    <string name="ten_nam">Tên bạn nam</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter Your name</string>
+    <string name="todays_date">Todays Date</string>
+    <string name="ch_ph_o">Chí Phèo</string>
+    <string name="_8_12_1988">8/12/1988</string>
+    <string name="tu_i_c_a_b_n_l">Tuổi của bạn là</string>
+    <string name="_35_tuoi">35 tuoi</string>
+    <string name="sinh_nh_t_s_p_t_i_c_n">Sinh nhật sắp tới còn</string>
+    <string name="_365_ng_y">365 Ngày</string>
+    <string name="v_n_m_nh_c_a_b_n">Vận mệnh của bạn</string>
+    <string name="b_n_sinh_ng_y">Bạn Sinh Ngày</string>
+    <string name="hello">Hello</string>
+    <string name="th_4_th_ng_12_2014">Thứ 4, Tháng 12, 2014</string>
+    <string name="ch_n_ng_y_sinh_c_a_b_n">Chọn Ngày Sinh Của Bạn</string>
+</resources>
