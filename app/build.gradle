@@ -12,8 +12,8 @@ android {
         applicationId "com.myapp.lovetest_azuredragon3000"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 11
-        versionName "11.0"
+        versionCode 12
+        versionName "12.0"
 
     }
 
@@ -30,8 +30,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
-    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
