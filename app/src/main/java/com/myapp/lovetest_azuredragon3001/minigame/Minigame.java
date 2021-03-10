@@ -1,4 +1,4 @@
-package com.myapp.lovetest_azuredragon3000.minigame;
+package com.myapp.lovetest_azuredragon3001.minigame;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.myapp.lovetest_azuredragon3000.R;
+import com.myapp.lovetest_azuredragon3001.R;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.myapp.lovetest_azuredragon3000.main;
+package com.myapp.lovetest_azuredragon3001.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.myapp.lovetest_azuredragon3000.R;
-import com.myapp.lovetest_azuredragon3000.minigame.Minigame;
+import com.myapp.lovetest_azuredragon3001.R;
+import com.myapp.lovetest_azuredragon3001.minigame.Minigame;
 
 public class MainActivity extends AppCompatActivity{
     @Override

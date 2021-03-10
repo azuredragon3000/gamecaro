@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.myapp.lovetest_azuredragon3000">
+    package="com.myapp.lovetest_azuredragon3001">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -8,11 +8,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.boitinhyeuazure">
         <activity
-            android:name=".minigame.Minigame"
+            android:name="com.myapp.lovetest_azuredragon3001.minigame.Minigame"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.myapp.lovetest_azuredragon3001.main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

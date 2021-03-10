@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.myapp.lovetest_azuredragon3000"
+        applicationId "com.myapp.lovetest_azuredragon3001"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 12

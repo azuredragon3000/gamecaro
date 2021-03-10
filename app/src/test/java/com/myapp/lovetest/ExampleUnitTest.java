@@ -1,4 +1,4 @@
-package com.myapp.lovetest_azuredragon3000;
+package com.myapp.lovetest_azuredragon3001;
 
 import org.junit.Test;
 
