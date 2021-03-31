@@ -27,13 +27,16 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
     private boolean win = false;
     private TextView textViewPlayer1;
    // private TextView textViewPlayer2;
-
-
+    private boolean hoa;
+    private int ihoa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minigame);
+
         textViewPlayer1 = findViewById(R.id.win);
+        hoa = false;
+        ihoa = 0;
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 String buttonID = "button_" + i + j;
@@ -54,13 +57,7 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
             }
         });
 
-        Button buttonNext = findViewById(R.id.button_next);
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextGame();
-            }
-        });
+
     }
 
     @Override
@@ -72,16 +69,26 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
         if(!win){
             ((Button)v).setText("X");
             if(checkForWin()){
-                player1Wins();
+                if(hoa == false) {
+                    player1Wins();
+                }else{
+                    playerdraw();
+                }
             }else{
                 Button pl2 = player2turn();
                 pl2.setText("0");
                 if(checkForWin()){
-                    player2Wins();
+                    if(hoa == false) {
+                        player2Wins();
+                    }else{
+                        playerdraw();
+                    }
                 }
             }
         }
     }
+
+
 
     private Button player2turn() {
         String[][] field = new String[3][3];
@@ -151,6 +158,20 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
             return true;
         }
 
+        ihoa = 0;
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                if(!field[i][j].equals("")){
+                    ihoa++;
+                }
+            }
+        }
+
+        if(ihoa == 9){
+            hoa = true;
+            return true;
+        }
+
         return false;
     }
 
@@ -161,7 +182,14 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
         win = true;
         //resetBoard();
     }
-
+    private void playerdraw() {
+        player1Points++;
+        //Toast.makeText(this,"player 1 wins!",Toast.LENGTH_SHORT);
+        updatePointsText("DRAW");
+        win = true;
+        hoa = false;
+        ihoa = 0;
+    }
     private void player2Wins(){
         player2Points++;
         //Toast.makeText(this,"player 2 wins!",Toast.LENGTH_SHORT);
@@ -198,6 +226,7 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
         resetBoard();
         Button pl2 = player2turn();
         pl2.setText("0");
+        updatePointsText("HAPPY TIME");
     }
 
     private void nextGame(){

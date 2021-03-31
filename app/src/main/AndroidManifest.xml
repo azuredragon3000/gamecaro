@@ -7,12 +7,17 @@
         android:label="GAME CARO"
         android:supportsRtl="true"
         android:theme="@style/Theme.boitinhyeuazure">
-        <activity
-            android:name="com.myapp.lovetest_azuredragon3001.minigame.Minigame"
-            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".minigame.Minigame2"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
 
         <activity
-            android:name="com.myapp.lovetest_azuredragon3001.main.MainActivity"
+            android:name=".minigame.Minigame"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

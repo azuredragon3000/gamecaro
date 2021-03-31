@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgcaro"
+    tools:context=".main.MainActivity">
+
+
+    <Button
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_pressed"
+        android:fontFamily="@font/my_custom_font"
+        android:text="PLAY WITH BOT"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_pressed"
+        android:fontFamily="@font/my_custom_font"
+        android:text="2 PLAYER MODE"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -12,8 +12,8 @@ android {
         applicationId "com.myapp.lovetest_azuredragon3001"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 12
-        versionName "12.0"
+        versionCode 20
+        versionName "20.0"
 
     }
 
