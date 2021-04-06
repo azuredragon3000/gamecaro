@@ -29,10 +29,13 @@ public class Minigame extends AppCompatActivity implements View.OnClickListener{
    // private TextView textViewPlayer2;
     private boolean hoa;
     private int ihoa;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minigame);
+
+
 
         textViewPlayer1 = findViewById(R.id.win);
         hoa = false;
